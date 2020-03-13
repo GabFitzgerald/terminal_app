@@ -5,6 +5,10 @@
 TODO: Installation instructions
 
 
+### Dependencies
+
+### Hardware Requirements
+
 ## GitHub link
 https://github.com/GabFitzgerald/terminal_app
 
@@ -22,7 +26,7 @@ Develop a statement of purpose and scope for your application. It must include:
 - explain how a member of the target audience will use it
 
 
-##Features (minimum of 3) - 100 words each
+## Features (minimum of 3) - 100 words each
 
 Interval Test
 This feature 
