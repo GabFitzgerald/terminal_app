@@ -19,7 +19,7 @@ tty-prompt (~> 0.21.0)
 
 ### Hardware Requirements
 - suitable ruby interpreter
-- sound output e.g. speakers
+- sound output e.g. speakers 
 
 ## Version control
 ![github commits](../docs/github_screenshot.png)
