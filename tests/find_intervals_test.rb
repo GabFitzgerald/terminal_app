@@ -2,9 +2,9 @@ require 'test/unit'
 require_relative '../find_intervals.rb'
 
 class FindIntervalsTest < Test::Unit::TestCase
-  def test_find_easiest_intervals
-    easiest_interval = test_find_easiest_intervals([1,2,3,4,5])
-    assert_equal("Perfect score!", message)
+  def test_find_easiest_intervals()
+    easiest_interval = test_find_easiest_intervals([1, 2, 2, 3, 3, 4, 4, 5, 5])
+    assert_equal(["minor 2nd"], easiest_interval)
   end
 
   # def test2_feedback

@@ -3,7 +3,7 @@ require_relative '../feedback.rb'
 
 class FeedbackTest < Test::Unit::TestCase
   def test1_feedback
-    message = feedback([1,2,3,4,5], 5)
+    message = feedback([1,2,3,4,5], 6)
     assert_equal("Perfect score!", message)
   end
 
