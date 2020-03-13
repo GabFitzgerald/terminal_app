@@ -3,32 +3,37 @@
 ## Help Documentation
 ### Installation
 1. Install Ruby
-2. Run shell command TODO
-
-TODO: Installation instructions
+2. Run:
+```ruby
+ sh -c "\$(curl -fsSL https://raw.githubusercontent.com/GabFitzgerald/terminal_app/master/run.sh.sh)
+ ```
 
 ### Dependencies
-TODO: lift from gemfile
+ruby environment 2.7.0\
+colorize (~> 0.8.1)\
+sounder (~> 1.2)\
+test-unit (~> 3.3)\
+tty (~> 0.1.0)\
+tty-table (~> 0.11.0)\
+tty-prompt (~> 0.21.0)
 
 ### Hardware Requirements
 - suitable ruby interpreter
 - sound output e.g. speakers
 
-## GitHub link
+## Version control
+![github commits](../docs/github_screenshot.png)
 https://github.com/GabFitzgerald/terminal_app
 
+
 ## Purpose & Scope
-Ear training is an integral part of learning music, and being able to identify specific intervals accurately has many applications for musicians, such as playing songs by ear, being able to write down a tune they have in their head, and enhancing their understanding of music in general. The Terminal Ear Training application will help musicians, or anyone wanting to improve their musicianship identify the distance between notes by listening to them.
+Ear training is an integral part of learning music, and being able to identify specific intervals accurately has many applications for musicians, such as playing songs by ear, freely being able to write down a tune they have in their head without using trial and error, and enhancing their understanding of music in general. The Terminal Ear Training application will help musicians, or anyone wanting to improve their musicianship by improving their sense of relative pitch. This is achieved by presenting the user with two recordings of notes played on the piano, and the user guesses the interval between them (e.g. major 3rd or perfect fifth).
 
-- identify the problem it will solve and explain why you are developing it
-- identify the target audience
-- explain how a member of the target audience will use it
+The test also utilises effective repetitions so the user can focus on hearing specific intervals they get wrong. This is achieved by removing questions from the question bank once it is answered correctly, then the user is left to focus on questions they continue to get wrong. The test ends once all questions are answered correctly once. The user then has the option of creating custom tests using command line arguments, to further focus on specific intervals they may be struggling with.
 
-Specifically, the user will run the application, and be presented an interval test.
+At the end of each test, the program offers detailed feedback on the intervals the user was able to answer quickly and the intervals that took the highest number of tries and answer correctly.
 
-- describe at a high level what the application will do
-- explain the scope of the application
-
+The scope of this application is limited to referencing C4 as the first note for every question. It also only tests ascending intervals from C4 to C5. This means that only the notes in that range are stored as mp3 files in the source code. This is an opportunity for expanding the program later. Additionally, it only tests intervals with a one second delay. Opportunities for expansion would include ear testing notes played at the same time, recognising chord triads, and many more ear tests. It would also be an opportunity to base the ear tests closer to standard music examination boards such as AMEB, so that students can use this application while studying for their exams. 
 
 ## Features
 
